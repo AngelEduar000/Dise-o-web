@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center; /* Centrar el contenido */
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+    width: 95%; /* Ocupa el 100% del ancho de la pantalla */
+    margin: 20px auto; /* Centra el carrusel */
+    overflow: hidden; /* Oculta el desbordamiento de las imágenes */
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease; /* Animación suave */
+    width: 100%; /* Ancho total del carrusel (5 imágenes = 500%) */
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    height: 700px;
+}
+
+.carousel img:hover {
+    transform: scale(1.1); /* Zoom del 10% */
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 10; /* Asegura que los botones estén por encima del carrusel */
+}
+
+/* Efecto hover para los botones */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al pasar el mouse */
+    transform: translateY(-50%) scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.prev {
+    left: 20px; /* Posición del botón "Anterior" */
+}
+
+.next {
+    right: 20px; /* Posición del botón "Siguiente" */
+}
+
+/* FOOTERRRRRRRRRRRRRRR */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b0082; /* Morado oscuro */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Footer al final de la página */
+}
+
+.footer-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.footer-left p {
+    margin: 5px 0;
+}
+
+.social-media a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.footer-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.footer-right iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+/* FORMSSSSSSSSSSSSSSSSSSSSSS */
+
+.form-container {
+    background-color: #1c1c1c; /* Fondo oscuro para el formulario */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 150, 0.5); /* Sombra verde neón */
+    width: 100%; /* Ancho del formulario */
+    max-width: 1000px; /* Ancho máximo */
+    margin: 2rem auto; /* Centrado y espacio arriba/abajo */
+}
+
+h1 {
+    color: #00ff96; /* Verde neón */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #00ff96; /* Verde neón */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #00ff96; /* Borde verde neón */
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Fondo oscuro para los inputs */
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #00ff96; /* Fondo verde neón */
+    color: #0a0a0a; /* Texto oscuro */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc7a; /* Verde más oscuro al pasar el ratón */
+}
+
